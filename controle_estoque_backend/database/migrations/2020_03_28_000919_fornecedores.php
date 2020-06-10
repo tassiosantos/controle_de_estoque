@@ -21,6 +21,8 @@ class Fornecedores extends Migration
         });
     }
 
+ 
+
     /**
      * Reverse the migrations.
      *
@@ -28,6 +30,6 @@ class Fornecedores extends Migration
      */
     public function down()
     {
-        //
+        // Schema::drop('fornecedors');
     }
 }

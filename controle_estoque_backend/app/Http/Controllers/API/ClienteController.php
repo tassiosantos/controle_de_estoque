@@ -29,4 +29,10 @@ class ClienteController extends Controller
     public function ler(){
         $clientes = Cliente::all();
     }
-}
+
+
+    public function lista(){
+        return Cliente::all(); ;
+
+    }
+} 

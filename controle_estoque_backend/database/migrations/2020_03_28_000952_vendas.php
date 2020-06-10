@@ -15,10 +15,10 @@ class Vendas extends Migration
     {
         Schema::create('vendas', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('cliente_id')->unsigned();
-            $table->foreign('cliente_id')->references('id')->on('clientes');
-            $table->integer('produto_id')->unsigned();
-            $table->foreign('produto_id')->references('id')->on('produtos');
+            // $table->integer('cliente_id')->unsigned();
+            // $table->foreign('cliente_id')->references('id')->on('clientes');
+            // $table->integer('produto_id')->unsigned();
+            // $table->foreign('produto_id')->references('id')->on('produtos');
             $table->integer('quantidade');
             $table->boolean('situação');
             $table->timestamps();

@@ -30,8 +30,8 @@ class FornecedorController extends Controller
     }
 
     public function lista(){
-        // return view('/fornecedores/create');
-        return "Olá função lista fornecedores";
+        
+        return Fornecedor::all();
     }
 
     public function edit($id)

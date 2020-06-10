@@ -20,7 +20,7 @@ Route::namespace('API')->name('api.')->group(function(){
     });
 
     Route::prefix('clientes')->group(function(){
-        Route::get('/lista', 'FornecedorController@lista');
+        Route::get('/lista', 'ClienteController@lista');
     
         Route::get('/create', 'FornecedorController@create');   
 
